@@ -4,9 +4,9 @@ import requests
 import json
 
 
-app.config.SWAGGER_UI_JSONEDITOR = True
+application.config.SWAGGER_UI_JSONEDITOR = True
 
-api = Api(app, version='1.10', title='Bank IFSC API',
+api = Api(application, version='1.10', title='Bank IFSC API',
           description='Standalone API Wrapper for Bank IFSC Codes', contact='kumarshivam192@gmail.com', default="Main API", default_label='Namespace'
           )
 
@@ -24,6 +24,3 @@ class HelloWorld(Resource):
         data = req.json()
         return data
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
