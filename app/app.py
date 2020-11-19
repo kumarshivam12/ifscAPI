@@ -1,4 +1,4 @@
-from app import app
+from app import application
 from flask_restx import Resource, Api, fields
 import requests
 import json
